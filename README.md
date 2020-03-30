@@ -86,26 +86,6 @@ $_DVWA[ 'db_password' ] = 'SuperSecretPassword99';
 $_DVWA[ 'db_database' ] = 'dvwa';
 ```
 
-### Other Configuration
-
-Depending on your Operating System, as well as version of PHP, you may wish to alter the default configuration. The location of the files will be different on a per-machine basis.
-
-**Folder Permissions**:
-
-* `./hackable/uploads/` - Needs to be writable by the web service (for File Upload).
-* `./external/phpids/0.6/lib/IDS/tmp/phpids_log.txt` - Needs to be writable by the web service (if you wish to use PHPIDS).
-
-**PHP configuration**:
-
-* `allow_url_include = on` - Allows for Remote File Inclusions (RFI)   [[allow_url_include](https://secure.php.net/manual/en/filesystem.configuration.php#ini.allow-url-include)]
-* `allow_url_fopen = on` -  Allows for Remote File Inclusions (RFI)    [[allow_url_fopen](https://secure.php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen)]
-* `safe_mode = off` - (If PHP <= v5.4) Allows for SQL Injection (SQLi) [[safe_mode](https://secure.php.net/manual/en/features.safe-mode.php)]
-* `magic_quotes_gpc = off` - (If PHP <= v5.4) Allows for SQL Injection (SQLi) [[magic_quotes_gpc](https://secure.php.net/manual/en/security.magicquotes.php)]
-* `display_errors = off` - (Optional) Hides PHP warning messages to make it less verbose [[display_errors](https://secure.php.net/manual/en/errorfunc.configuration.php#ini.display-errors)]
-
-**File: `config/config.inc.php`**:
-
-* `$_DVWA[ 'recaptcha_public_key' ]` & `$_DVWA[ 'recaptcha_private_key' ]` - These values need to be generated from: https://www.google.com/recaptcha/admin/create
 
 ### Default Credentials
 
@@ -116,7 +96,6 @@ Depending on your Operating System, as well as version of PHP, you may wish to a
 _...can easily be brute forced ;)_
 
 Login URL: http://127.0.0.1/dvwa/login.php
-
 
 
 ## Links
